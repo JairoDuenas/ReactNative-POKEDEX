@@ -1,4 +1,3 @@
-import React from "react";
 import { API_HOST } from "../utils/constants";
 
 export async function getPokemonsApi(endpointUrl) {
@@ -22,7 +21,7 @@ export async function getPokemonDetailsByUrlApi(url) {
   }
 }
 
-export async function getPokemonDetailApi(id) {
+export async function getPokemonDetailsApi(id) {
   try {
     const url = `${API_HOST}/pokemon/${id}`;
     const response = await fetch(url);
