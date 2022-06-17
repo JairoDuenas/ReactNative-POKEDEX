@@ -25,7 +25,7 @@ export default function LoginForm() {
       const { username, password } = formValue;
 
       if (username !== user.username || password !== user.password) {
-        setError("El usuario o la contraseña no son correctos");
+        setError("El usuario o la contraseña no son correcto");
       } else {
         login(userDetails);
       }
@@ -67,7 +67,7 @@ function initialValues() {
 
 function validationSchema() {
   return {
-    username: Yup.string().required("El nombre de usuario es obligatorio"),
+    username: Yup.string().required("El usuario es obligatorio"),
     password: Yup.string().required("La contraseña es obligatoria"),
   };
 }

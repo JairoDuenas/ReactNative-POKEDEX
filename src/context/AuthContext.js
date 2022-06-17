@@ -18,7 +18,11 @@ export function AuthProvider(props) {
     setAuth(undefined);
   };
 
-  const valueContext = { auth, login, logout };
+  const valueContext = {
+    auth,
+    login,
+    logout,
+  };
 
   return (
     <AuthContext.Provider value={valueContext}>{children}</AuthContext.Provider>

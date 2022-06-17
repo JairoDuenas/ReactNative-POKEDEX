@@ -5,7 +5,7 @@ import UserData from "../components/Auth/UserData";
 import useAuth from "../hooks/useAuth";
 
 export default function Account() {
-  const { auth } = useAuth;
+  const { auth } = useAuth();
 
   return <View>{auth ? <UserData /> : <LoginForm />}</View>;
 }
