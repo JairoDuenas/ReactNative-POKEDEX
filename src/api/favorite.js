@@ -30,6 +30,7 @@ export async function isPokemonFavoriteApi(id) {
   }
 }
 
+// se crea la siguiente función
 export async function removePokemonFavoriteApi(id) {
   try {
     const favorites = await getPokemonsFavoriteApi();
